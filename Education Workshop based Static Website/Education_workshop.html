@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      #template {
+        background-color: rgb(91, 84, 84);
+        height: 30px;
+        color: white;
+        padding-top: 10px;
+        padding-left: 110px;
+      }
+      #templeft {
+        float: left;
+      }
+      #html {
+        color: orange;
+      }
+      #tempright {
+        margin-right: 120px;
+        float: right;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .fa-facebook-f {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .fa-facebook-f :hover {
+        color: orange;
+        cursor: pointer;
+      }
+
+      .fa-twitter {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .fa-twitter :hover {
+        color: orange;
+        cursor: pointer;
+      }
+      .fa-whatsapp {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .fa-whatsapp :hover {
+        color: orange;
+        cursor: pointer;
+      }
+      .fa-linkedin-in {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .fa-linkedin-in :hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #stock {
+        height: 100%;
+        width: 100%;
+      }
+      #opp11 {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        color: black;
+      }
+      #header {
+        position: absolute;
+        top: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #f1f1f1;
+        height: 100px;
+        width: 100%;
+      }
+      #edu11 {
+        float: left;
+        margin-left: 110px;
+        padding-top: 30px;
+        font-size: 30px;
+      }
+      #home11 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+        margin-right: 135px;
+      }
+      #home11:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home22 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      #home22:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home33 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      #home33:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      .home44 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      .popuplogin {
+        display: none;
+        margin-left: 1055px;
+        position: absolute;
+        top: 70px;
+        height: 73px;
+        width: 230px;
+        background-color: rgb(254, 251, 251);
+        z-index: 1;
+      }
+      .popup11 {
+        color: rgb(15, 15, 15);
+        letter-spacing: 1px;
+        border: 1px solid rgb(93, 91, 91);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-size: 13px;
+      }
+      .home44:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      .home44:hover + .popuplogin {
+        display: block;
+      }
+
+      #home55 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      #home55:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home66 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+      #home66:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #hello {
+        position: absolute;
+        top: 140px;
+        height: 755px;
+        width: 1519px;
+        background-color: rgba(25, 24, 24, 0.7);
+      }
+      #students {
+        padding-top: 130px;
+        padding-left: 110px;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+      }
+      #welcome {
+        padding-top: 25px;
+        padding-left: 110px;
+        color: white;
+        padding-bottom: 30px;
+        font-size: 35px;
+        font-family: "Times New Roman", Times, serif;
+        font-family: sans-serif;
+      }
+      .para1 {
+        padding-left: 110px;
+        color: white;
+        line-height: 30px;
+      }
+      .blue {
+        color: rgb(2, 172, 251);
+      }
+      #button11 {
+        padding-left: 110px;
+        padding-top: 20px;
+      }
+      #butt11 {
+        border: none;
+        height: 40px;
+        width: 150px;
+        background-color: rgb(138, 15, 15);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #greaterthan {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 1450px;
+        top: 870px;
+      }
+      #redflex {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      #redflex111 {
+        position: absolute;
+        top: 750px;
+        margin-left: 37px;
+        margin-right: 36px;
+        text-align: center;
+        height: 300px;
+        width: 400px;
+        background-image: url(./background.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #redflex222 {
+        position: absolute;
+        left: 525px;
+        top: 750px;
+        margin-left: 37px;
+        margin-right: 36px;
+        text-align: center;
+        height: 300px;
+        width: 400px;
+        background-image: url(./background.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #redflex333 {
+        position: absolute;
+        left: 1000px;
+        top: 750px;
+        margin-left: 37px;
+        margin-right: 36px;
+        text-align: center;
+        height: 300px;
+        width: 400px;
+        background-image: url(./background.jpg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .opp22 {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        height: 300px;
+        width: 400px;
+        opacity: 0.8;
+        background-color: rgb(153, 7, 7);
+      }
+      .conn22 {
+        color: white;
+      }
+      .icon01 {
+        padding-top: 50px;
+      }
+      .besthead22 {
+        padding-top: 20px;
+        font-family: sans-serif;
+      }
+      .paraone {
+        padding-top: 20px;
+      }
+      .paratwo {
+        padding-top: 10px;
+      }
+      .parathree {
+        padding-top: 10px;
+      }
+      #headfix {
+        height: 80px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        color: black;
+        background-color: white;
+        display: none;
+      }
+      #edu111 {
+        float: left;
+        margin-left: 110px;
+        padding-top: 25px;
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: sans-serif;
+      }
+      #home111 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+        margin-right: 135px;
+      }
+      #home111:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home222 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+      }
+      #home222:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home333 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+      }
+      #home333:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home444 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+      }
+      #home444:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home555 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+      }
+      #home555:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #home666 {
+        float: right;
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+      }
+      #home666:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      #whatsapp {
+        background-image: url(./background.jpg);
+        background-attachment: fixed;
+        height: 1300px;
+        width: 1519px;
+        margin-top: -5px;
+      }
+      #uphead {
+        text-align: center;
+        font-family: sans-serif;
+        color: white;
+        padding-top: 280px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid white;
+        padding-bottom: 25px;
+        margin-left: 110px;
+        margin-right: 110px;
+      }
+      #box11 {
+        margin-top: 50px;
+        margin-left: 110px;
+        height: 425px;
+        width: 330px;
+        padding-left: 50px;
+        padding-top: 30px;
+        line-height: 50px;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-family: sans-serif;
+        float: left;
+      }
+      #cat22 {
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: rgb(48, 45, 45);
+      }
+      #cond11 {
+        padding-top: 30px;
+      }
+      .options11 :hover {
+        color: orange;
+      }
+      #allup {
+        padding-top: 15px;
+      }
+      #buttall {
+        border: none;
+        height: 40px;
+        width: 300px;
+        background-color: rgb(143, 23, 23);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #newlec {
+        margin-top: 50px;
+        margin-right: 550px;
+        height: 400px;
+        width: 420px;
+        float: right;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .newlecpic {
+        height: 200px;
+        width: 420px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .rategray {
+        position: relative;
+        top: -190px;
+        left: 20px;
+      }
+      #buttgray {
+        background-color: rgba(225, 223, 223, 0.9);
+        border-radius: 10px;
+        height: 40px;
+        width: 80px;
+        font-size: 16px;
+        color: #1f272b;
+        font-weight: 600;
+        border: none;
+      }
+      #buttgray22 {
+        background-color: rgba(225, 223, 223, 0.9);
+        border-radius: 10px;
+        height: 40px;
+        width: 80px;
+        font-size: 16px;
+        color: #1f272b;
+        font-weight: 600;
+        border: none;
+      }
+      #buttgray33 {
+        background-color: rgba(225, 223, 223, 0.9);
+        border-radius: 10px;
+        height: 40px;
+        width: 80px;
+        font-size: 16px;
+        color: #1f272b;
+        font-weight: 600;
+        border: none;
+      }
+      #buttgray44 {
+        background-color: rgba(225, 223, 223, 0.9);
+        border-radius: 10px;
+        height: 40px;
+        width: 80px;
+        font-size: 16px;
+        color: #1f272b;
+        font-weight: 600;
+        border: none;
+      }
+      .novleft {
+        float: left;
+        padding-top: 10px;
+        padding-left: 40px;
+      }
+      #lecright {
+        float: right;
+        padding-right: 90px;
+        padding-top: 10px;
+      }
+      .nov {
+        font-family: Arial, Helvetica, sans-serif;
+        color: brown;
+        font-size: 20px;
+      }
+      .date10 {
+        font-size: x-large;
+        padding-top: 10px;
+        padding-left: 6px;
+        color: rgb(48, 45, 45);
+      }
+      .newlechead {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: rgb(48, 45, 45);
+      }
+      .morbi1 {
+        padding-top: 20px;
+        font-family: sans-serif;
+      }
+      .morbi2 {
+        font-family: sans-serif;
+        padding-top: 10px;
+      }
+      #newlec22 {
+        margin-top: -400px;
+        margin-right: 110px;
+        height: 400px;
+        width: 420px;
+        float: right;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #lecright22 {
+        float: right;
+        padding-right: 50px;
+        padding-top: 10px;
+      }
+      #newlec33 {
+        margin-top: 30px;
+        margin-right: 550px;
+        height: 400px;
+        width: 420px;
+        float: right;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #lecright33 {
+        float: right;
+        padding-right: 30px;
+        padding-top: 10px;
+      }
+      #newlec44 {
+        margin-top: 480px;
+        position: absolute;
+        right: 110px;
+        height: 400px;
+        width: 420px;
+        float: right;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #lecright44 {
+        float: right;
+        padding-right: 50px;
+        padding-top: 10px;
+      }
+      #tablestudents {
+        background-image: url(./talking_3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 744px;
+        width: 100%;
+        background-attachment: fixed;
+      }
+      #opp44 {
+        height: 744px;
+        width: 100%;
+        opacity: 0.8;
+        background-color: rgb(16, 25, 29);
+      }
+      #lefttop {
+        margin-left: 110px;
+        position: relative;
+        top: 50px;
+        height: 300px;
+        width: 680px;
+        color: white;
+        background-color: rgba(99, 97, 97, 0.5);
+      }
+      #apply {
+        padding-top: 50px;
+        padding-left: 50px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+      #allowed {
+        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-top: 40px;
+      }
+      #feel {
+        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-top: 10px;
+      }
+      #join444 {
+        padding-left: 50px;
+        padding-top: 30px;
+      }
+      #butt444 {
+        border: none;
+        height: 40px;
+        width: 150px;
+        background-color: rgb(180, 18, 18);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #lefttop22 {
+        margin-left: 110px;
+        position: relative;
+        top: 90px;
+        height: 300px;
+        width: 680px;
+        color: white;
+        background-color: rgba(99, 97, 97, 0.5);
+      }
+      #apply22 {
+        padding-top: 50px;
+        padding-left: 50px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+      #allowed22 {
+        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-top: 40px;
+      }
+      #feel22 {
+        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-top: 10px;
+      }
+      #join44422 {
+        padding-left: 50px;
+        padding-top: 30px;
+      }
+      #butt44422 {
+        border: none;
+        height: 40px;
+        width: 150px;
+        background-color: rgb(180, 18, 18);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #rightbox22 {
+        height: 640px;
+        width: 600px;
+        position: relative;
+        top: -695px;
+        left: 850px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+      }
+      #abouthead {
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: orange;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+      }
+      .ifyou {
+        padding-left: 100px;
+        padding-top: 10px;
+      }
+      #abouthead22 {
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: orange;
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+      }
+      #abouthead33 {
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: orange;
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+      }
+      #whatsapp22 {
+        background-image: url(./background.jpg);
+        background-attachment: fixed;
+        height: 720px;
+        width: 1519px;
+        margin-top: -640px;
+      }
+      #ourpop {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        margin-left: 110px;
+        margin-right: 110px;
+        letter-spacing: 1px;
+        padding: 115px 0px 30px 0px;
+      }
+      #star {
+        margin: 50px 110px 50px 110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .pic111 {
+        height: 180px;
+        width: 280px;
+      }
+      .headwhite {
+        height: 180px;
+        width: 280px;
+        margin-top: -5px;
+        background-color: white;
+      }
+      .res111 {
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-top: 35px;
+        color: rgb(61, 58, 58);
+      }
+      .res222 {
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+        color: rgb(61, 58, 58);
+      }
+      .staricon {
+        float: left;
+        padding-left: 30px;
+        padding-top: 50px;
+      }
+      .rate {
+        float: right;
+        color: maroon;
+        padding-right: 30px;
+        padding-top: 50px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .smallstar {
+        height: 20px;
+        width: 20px;
+      }
+      #pencil {
+        background-image: url(./pencil_bittingjpg.avif);
+        background-size: cover;
+        background-position: center;
+        height: 730px;
+        width: 100%;
+        background-attachment: fixed;
+      }
+      #opp555 {
+        height: 730px;
+        width: 100%;
+        opacity: 0.8;
+        background-color: rgba(16, 25, 29, 1);
+      }
+      #headfew {
+        font-size: 38px;
+        color: #fff;
+        line-height: 50px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding-left: 110px;
+        padding-top: 90px;
+      }
+      #headfew22 {
+        font-size: 38px;
+        color: #fff;
+        line-height: 50px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding-left: 110px;
+      }
+      #succ111 {
+        height: 150px;
+        width: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(99, 97, 97, 0.5);
+        margin-left: 110px;
+        margin-top: 50px;
+      }
+      .percent {
+        color: orange;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        padding-top: 25px;
+        letter-spacing: 1px;
+      }
+      .words {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-top: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #succ222 {
+        height: 150px;
+        width: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(99, 97, 97, 0.5);
+        margin-left: 440px;
+        margin-top: -110px;
+      }
+      #succ333 {
+        height: 150px;
+        width: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(99, 97, 97, 0.5);
+        margin-left: 110px;
+        margin-top: -5px;
+      }
+      #succ444 {
+        height: 150px;
+        width: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(99, 97, 97, 0.5);
+        margin-left: 440px;
+        margin-top: -110px;
+      }
+      #videopic22 {
+        height: 400px;
+        width: 500px;
+        position: relative;
+        top: -560px;
+        left: 880px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      #playicon {
+        height: 70px;
+        width: 70px;
+        position: relative;
+        top: -730px;
+        left: 590px;
+      }
+      #whatsapp333 {
+        background-image: url(./background.jpg);
+        background-attachment: fixed;
+        height: 1000px;
+        width: 1519px;
+        margin-top: -405px;
+      }
+      #letsget {
+        height: 500px;
+        width: 970px;
+        margin-left: 110px;
+        position: relative;
+        top: 120px;
+        background-color: white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      #lethead22 {
+        letter-spacing: 1px;
+        border-bottom: 1px solid #eee;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .name11 {
+        margin-left: 50px;
+        margin-top: 40px;
+        height: 40px;
+        width: 250px;
+        background-color: rgb(232, 231, 231);
+        border: none;
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #formtext22 {
+        margin-left: 50px;
+        margin-top: 40px;
+        height: 150px;
+        width: 870px;
+        background-color: rgb(232, 231, 231);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: none;
+      }
+      #sendmgs {
+        margin-left: 50px;
+        margin-top: 35px;
+      }
+      #buttsendmgs {
+        border: none;
+        height: 40px;
+        width: 200px;
+        background-color: #a12c2f;
+        color: white;
+        letter-spacing: 1px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        cursor: pointer;
+      }
+      #sidered {
+        height: 550px;
+        width: 300px;
+        background-color: #a12c2f;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        top: -402px;
+        left: 1100px;
+        color: white;
+      }
+      #sidered {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .numberone {
+        margin-left: 30px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .numbertwo22 {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+      }
+      .numbertwo33 {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+        margin-right: 20px;
+      }
+      .numbertwo {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        margin-right: 20px;
+        border-bottom: 1px solid #eee;
+      }
+      .numbertwo44 {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 3px;
+        padding-bottom: 40px;
+        margin-right: 20px;
+        border-bottom: 1px solid #eee;
+      }
+      #copy {
+        text-align: center;
+        margin-top: -200px;
+        color: white;
+        padding-top: 43px;
+        border-top: 1px solid white;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-family: sans-serif;
+      }
+      .lineone {
+        font-size: 12px;
+      }
+      .orange22 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="template">
+        <div id="templeft">
+          This is an educational
+          <span id="html">HTML CSS</span>
+          template by TemplateMo website.
+        </div>
+        <div id="tempright">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-whatsapp"></i
+          ><i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div id="video">
+        <div id="opp11">
+          <div id="conn11">
+            <video
+              src="./Student_HD_Stock.mp4"
+              type="video/mp4"
+              muted
+              autoplay
+              loop
+              id="stock"
+            ></video>
+            <div id="header">
+              <span id="edu11">EDU MEETING</span>
+              <span id="home11">HOME</span>
+              <span id="home22">MEETINGS</span>
+              <span id="home33">APPLY NOW</span>
+              <span class="home44">PAGES</span>
+              <div class="popuplogin">
+                <h4 class="popup11">UPCOMING MEETINGS</h4>
+                <h4 class="popup11">MEETING DETAILS</h4>
+              </div>
+              <span id="home55">COURSES</span>
+              <span id="home66">CONTACT US</span>
+            </div>
+            <div id="hello">
+              <h3 id="students">HELLO STUDENTS</h3>
+              <h1 id="welcome">WELCOME TO EDUCATION</h1>
+              <p class="para1">
+                This is an edu meeting HTML CSS template provided by
+                <span class="blue">Template Mo website.</span> This
+              </p>
+              <p class="para1">
+                is abootstrap v5.1.3 layout. The video background is taken from
+                Pexels website, a
+              </p>
+              <p class="para1">
+                group of young people by
+                <span class="blue">Pressmaster.</span>
+              </p>
+              <div id="button11">
+                <button id="butt11">JOIN US NOW!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="redflex">
+        <div id="redflex111">
+          <div class="opp22">
+            <div class="conn22">
+              <img src="./icon-01.png" class="icon01" />
+              <h3 class="besthead22">Best Education</h3>
+              <p class="paraone">Suspendisse tempor mauris a sem elementum</p>
+              <p class="paratwo">bibendum. praesent facilisis massa non</p>
+              <p class="parathree">vestibulum.</p>
+            </div>
+          </div>
+        </div>
+        <div id="redflex222">
+          <div class="opp22">
+            <div class="conn22">
+              <img src="./icon-02.png" class="icon01" />
+              <h3 class="besthead22">Beat Teachers</h3>
+              <p class="paraone">Suspendisse tempor mauris a sem elementum</p>
+              <p class="paratwo">bibendum. praesent facilisis massa non</p>
+              <p class="parathree">vestibulum.</p>
+            </div>
+          </div>
+        </div>
+        <div id="redflex333">
+          <div class="opp22">
+            <div class="conn22">
+              <img src="./icon-03.png" class="icon01" />
+              <h3 class="besthead22">Best Students</h3>
+              <p class="paraone">Suspendisse tempor mauris a sem elementum</p>
+              <p class="paratwo">bibendum. praesent facilisis massa non</p>
+              <p class="parathree">vestibulum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="whatsapp">
+        <div id="headfix">
+          <span id="edu111">EDU MEETING</span>
+          <span id="home111">HOME</span>
+          <span id="home222">MEETINGS</span>
+          <span id="home333">APPLY NOW</span>
+          <span id="home444">PAGES</span>
+          <span id="home555">COURSES</span>
+          <span id="home666">CONTACT US</span>
+        </div>
+        <div id="upcoming">
+          <h1 id="uphead">UPCOMING MEETINGS</h1>
+        </div>
+        <div id="box11">
+          <div id="Cat">
+            <h2 id="cat22">Meeting Catgories</h2>
+          </div>
+          <div id="cond11">
+            <h4 class="options11">Sed tempus enim leo</h4>
+            <h4 class="options11">Aenean molestie quis</h4>
+            <h4 class="options11">Cras et metus vestibulum</h4>
+            <h4 class="options11">Nam et condimentum</h4>
+            <h4 class="options11">Phasellus nec sapien</h4>
+          </div>
+          <div id="allup">
+            <button id="buttall">ALL UPCOMING MEETING</button>
+          </div>
+        </div>
+        <div id="newlec">
+          <img src="./meeting-01.jpg" class="newlecpic" />
+          <div class="rategray">
+            <button id="buttgray">$22.00</button>
+          </div>
+          <span class="novleft">
+            <h3 class="nov">NOV</h3>
+            <h3 class="date10">10</h3>
+          </span>
+          <span id="lecright">
+            <h3 class="newlechead">New Lecturers Meeting</h3>
+            <p class="morbi1">Morbi in libero blandit lectus</p>
+            <p class="morbi2">cursus ullamcorper.</p>
+          </span>
+        </div>
+        <div id="newlec22">
+          <img src="./meeting-02.jpg" class="newlecpic" />
+          <div class="rategray">
+            <button id="buttgray22">$36.00</button>
+          </div>
+          <span class="novleft">
+            <h3 class="nov">NOV</h3>
+            <h3 class="date10">24</h3>
+          </span>
+          <span id="lecright22">
+            <h3 class="newlechead">Online Teaching Techniques</h3>
+            <p class="morbi1">Morbi in libero blandit lectus</p>
+            <p class="morbi2">cursus ullamcorper.</p>
+          </span>
+        </div>
+        <div id="newlec33">
+          <img src="./meeting-03.jpg" class="newlecpic" />
+          <div class="rategray">
+            <button id="buttgray33">$14.00</button>
+          </div>
+          <span class="novleft">
+            <h3 class="nov">NOV</h3>
+            <h3 class="date10">26</h3>
+          </span>
+          <span id="lecright33">
+            <h3 class="newlechead">Higher Education Conference</h3>
+            <p class="morbi1">Morbi in libero blandit lectus</p>
+            <p class="morbi2">cursus ullamcorper.</p>
+          </span>
+        </div>
+        <div id="newlec44">
+          <img src="./meeting-04.jpg" class="newlecpic" />
+          <div class="rategray">
+            <button id="buttgray44">$48.00</button>
+          </div>
+          <span class="novleft">
+            <h3 class="nov">NOV</h3>
+            <h3 class="date10">24</h3>
+          </span>
+          <span id="lecright44">
+            <h3 class="newlechead">Online Teaching Techniques</h3>
+            <p class="morbi1">Morbi in libero blandit lectus</p>
+            <p class="morbi2">cursus ullamcorper.</p>
+          </span>
+        </div>
+      </div>
+      <div id="tablestudents">
+        <div id="opp44">
+          <div id="conn44">
+            <div id="lefttop">
+              <h2 id="apply">APPLY FOR BACHELOR DEGREE</h2>
+              <p id="allowed">
+                You are allowed to use this edu meeting CSS template for your
+                school or
+              </p>
+              <p id="feel">
+                university or business. You can feel free to modify or edit this
+                layout.
+              </p>
+              <div id="join444">
+                <button id="butt444">JOIN US NOW!</button>
+              </div>
+            </div>
+            <div id="lefttop22">
+              <h2 id="apply22">APPLY FOR MASTER DEGREE</h2>
+              <p id="allowed22">
+                You are not allowed to redistribute the template ZIP file on any
+                other template
+              </p>
+              <p id="feel22">
+                website. Please contact us for more information.
+              </p>
+              <div id="join44422">
+                <button id="butt44422">JOIN US NOW!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rightbox22">
+        <h2 id="abouthead">About Edu Meeting HTML Template</h2>
+        <p class="ifyou">
+          If you want to get the latest collection of HTML CSS templates
+        </p>
+        <p class="ifyou">
+          for your websites, you may visit
+          <span class="blue">Too CSS website.</span> If you need
+        </p>
+        <p class="ifyou">
+          a working contact form script, please visit
+          <span class="blue"> our contact page</span>
+        </p>
+        <p class="ifyou">for more info.</p>
+        <h2 id="abouthead22">HTML CSS Bootstrap Layout</h2>
+        <p class="ifyou">
+          Etiam posuere metus orci, vel consectetur elit imperdiet eu.
+        </p>
+        <p class="ifyou">
+          <span class="blue">Cras ipsum magna,</span> maximus at semper sit
+          amet, eleifend
+        </p>
+        <p class="ifyou">
+          eget neque. Nunc facilisis quam purus, sed vulputate augue
+        </p>
+        <p class="ifyou">
+          interdum vitae.<span class="blue"> Aliquam a elit massa.</span>
+        </p>
+        <h2 id="abouthead33">Please tell your friends</h2>
+        <p class="ifyou">
+          Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi
+        </p>
+        <p class="ifyou">
+          porttitor quam velit, at ullamcorper justo suscipit sit amet.
+        </p>
+        <p class="ifyou">
+          Mauris porttitor sapien et quam
+          <span class="blue">volutpat luctus.</span> Nullam
+        </p>
+        <p class="ifyou">Quisque at suscipit mi, non efficitur velit.</p>
+      </div>
+      <div id="whatsapp22">
+        <h2 id="ourpop">OUR POPULAR COURSES</h2>
+        <div id="star">
+          <div id="responsive">
+            <div>
+              <img src="./course-01.jpg" class="pic111" />
+            </div>
+            <div class="headwhite">
+              <h2 class="res111">Responsive HTML</h2>
+              <h2 class="res222">Templates for you</h2>
+              <div class="staricon">
+                <img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                /><img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                />
+              </div>
+              <p class="rate">$400</p>
+            </div>
+          </div>
+          <div id="responsive222">
+            <div>
+              <img src="./course-02.jpg" class="pic111" />
+            </div>
+            <div class="headwhite">
+              <h2 class="res111">Download Free CSS</h2>
+              <h2 class="res222">Layouts for you</h2>
+              <div class="staricon">
+                <img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                /><img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                />
+              </div>
+              <p class="rate">$430</p>
+            </div>
+          </div>
+          <div id="responsive333">
+            <div>
+              <img src="./course-03.jpg" class="pic111" />
+            </div>
+            <div class="headwhite">
+              <h2 class="res111">Morbi in libero blandit</h2>
+              <h2 class="res222">Lectus cursus</h2>
+              <div class="staricon">
+                <img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                /><img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                />
+              </div>
+              <p class="rate">$480</p>
+            </div>
+          </div>
+          <div id="responsive444">
+            <div>
+              <img src="./course-04.jpg" class="pic111" />
+            </div>
+            <div class="headwhite">
+              <h2 class="res111">Curabitur molestie</h2>
+              <h2 class="res222">dignissim purus</h2>
+              <div class="staricon">
+                <img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                /><img src="./star.png" class="smallstar" /><img
+                  src="./star.png"
+                  class="smallstar"
+                />
+              </div>
+              <p class="rate">$560</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pencil">
+        <div id="opp555">
+          <div id="conn555">
+            <h3 id="headfew">A Few Facts About Our</h3>
+            <h3 id="headfew22">University</h3>
+            <div id="succ111">
+              <h3 class="percent">94%</h3>
+              <h3 class="words">Succesed Students</h3>
+            </div>
+            <div id="succ222">
+              <h3 class="percent">2345</h3>
+              <h3 class="words">New Students</h3>
+            </div>
+            <div id="succ333">
+              <h3 class="percent">126</h3>
+              <h3 class="words">Current Teachers</h3>
+            </div>
+            <div id="succ444">
+              <h3 class="percent">32</h3>
+              <h3 class="words">Awards</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="youtube">
+        <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"
+          ><img src="./video.png" id="videopic22" /><img
+            src="./play_10.png"
+            id="playicon"
+        /></a>
+      </div>
+      <div id="whatsapp333">
+        <div id="letsget">
+          <div id="lethead22">LET'S GET IN TOUCH</div>
+          <form>
+            <input
+              type="text"
+              name="name"
+              placeholder="    YOUR NAME...*"
+              class="name11"
+            />
+            <input
+              type="email"
+              name="name"
+              placeholder="    YOUR EMAIL...*"
+              class="name11"
+            />
+            <input
+              type="email"
+              name="name"
+              placeholder="    SUBJECT...*"
+              class="name11"
+            />
+            <div id="textarea22">
+              <textarea
+                name="sugestions"
+                placeholder="  YOUR MESSAGE..."
+                id="formtext22"
+              ></textarea>
+            </div>
+            <div id="sendmgs">
+              <button id="buttsendmgs">SEND MESSAGE NOW</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="sidered">
+          <div>
+            <h2 class="numberone">Phone Number</h2>
+            <p class="numbertwo">90-432-80-429</p>
+          </div>
+          <div>
+            <h2 class="numberone">Email Address</h2>
+            <p class="numbertwo">subashkanna4u@gmail.com</p>
+          </div>
+          <div>
+            <h2 class="numberone">Street Address</h2>
+            <p class="numbertwo22">Rio de Janeiro - RJ,</p>
+            <p class="numbertwo44">22795-008, Brazil</p>
+          </div>
+          <div>
+            <h2 class="numberone">Website URL</h2>
+            <p class="numbertwo33">www.meeting.edu</p>
+          </div>
+        </div>
+        <div id="copy">
+          <h2 class="lineone">
+            COPYRIGHT © 2024 EDU MEETING CO., LTD. ALL RIGHTS RESERVED
+          </h2>
+          <h2 class="lineone">
+            DESIGNED BY : <span class="orange22">SOUP_BOY</span>
+          </h2>
+          <h2 class="lineone">
+            DISTIBUTED BY : <span class="orange22">THEMEWAGON</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
